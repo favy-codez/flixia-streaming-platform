@@ -15,32 +15,61 @@
     <header>
         <div class="nav">
             <div class="nav-left">
-                <img src="/Flixia logo.PNG" alt="logo" id="logo">
+                <img src="/images/Flixia logo.PNG" alt="logo" id="logo">
             </div>
             <div class="nav-right">
                 <a href="#">About us</a>
                 <a href="">plans and pricing</a>
-                <a href="#">Log in/Sign up</a>
+                <a href="#login">Log in/Sign up</a>
                 <a href="#">Contact us</a>
             </div>
         </div>
     </header>
     <main>
-        
-         
+        <!-- form section -->
+        <div id="overlay">
+            <div id="modal">
+                <img src="./images/emoji.svg" alt="" id="emoji">
+                <p id="bold"><b>Congrats!</b></p>
+                <p id="text">you have successfully joined the waitlist.We'd update you as soon as we launch.</p>
+                <button id="close-modal">close</button>
+            </div>
+        </div>
+
+        <div class="form">
+            <h2>Sign In</h2>
+
+            <form action="" id="login">
+            <label for="Email">Email</label>
+            <input type="email" name="Email" id="">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="">
+            <br>
+            <input type="submit" value="Sign in">
+            </form>
+
+            <div class="check">
+                <input type="checkbox" name="Remember me" id=""> 
+                <p>need help?</p>
+            </div>
+            <div class="sign">
+                <p>New to Flixia? Sign up now</p>
+            </div>
+        </div>
     </main>
     <footer>
-        <img src="/Flixia logo.PNG" alt="logo" id="logo">
+        <img src="/images/Flixia logo.PNG" alt="logo" id="logo">
         <div class="footerTextOne">
             <p class="link">Terms and Privacy Notice</p>
             <a href="#" class="link">Send us feedback</a>
             <p class="link">Help</p>
         </div>
         <div class="footerMedia">
-            <a href="https://twitter.com/phavourshelby"><i class="ri-twitter-line"></i></a>
-            <a href="https://www.instagram.com/cuteyfavour/"><i class="ri-instagram-line"></i></a>
-            <a href=""><i class="ri-whatsapp-line"></i></a>
-            <a href=""><i class="ri-youtube-line"></i></a>
+            <a href="https://twitter.com/phavourshelby"><img src="./images/twitter-line.png" alt="twitter icon" class="footerImage"></a>
+            <a href="https://www.instagram.com/cuteyfavour/"><img src="/images/instagram-line.png" alt="instagram icon" class="footerImage"></a>
+            <a href=""><img src="/images/facebook-fill.png" alt="facebook-icon" class="footerImage"></a>
+            <a href=""><img src="/images/youtube-line.png" alt="youtube-icon" class="footerImage"></a>
         </div>
         <div class="footerTextTwo">
             <p>&copy; Copyright 2022. All rights Reserved</p>

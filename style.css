@@ -28,6 +28,8 @@ a{
 
 #logo{
     width: 9rem;
+    max-width: 500px;
+    background-color: blue;
 }
 
 .nav-right{
@@ -36,6 +38,26 @@ a{
     padding-top: 1rem;
     
 }
+/* form section */
+.form{
+    margin: 8rem auto;
+    display: grid;
+    place-content: center;  
+    max-width: 500px;
+    background-color: aqua; 
+    padding: 4rem 2rem;
+}
+
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+
+input[type=submit]{
+    padding: 8px 40px;
+  }
 
 /* footer */
 footer{
@@ -64,3 +86,11 @@ footer{
     cursor: pointer;
 }
 
+.footerImage{
+    width: 2rem;
+    cursor: pointer;
+}
+
+.footerTextTwo{
+    margin: 1.5rem 0 0 0;
+}
