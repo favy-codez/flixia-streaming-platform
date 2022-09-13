@@ -19,42 +19,87 @@
             </div>
             <div class="nav-right">
                 <a href="#">About us</a>
-                <a href="">plans and pricing</a>
-                <a href="#login">Log in/Sign up</a>
+                <a href="#pricingSection">Plans and pricing</a>
+                <a href="#sign">Sign in</a>
                 <a href="#">Contact us</a>
             </div>
         </div>
     </header>
     <main>
-        <!-- form section -->
-        <div id="overlay">
-            <div id="modal">
-                <img src="./images/emoji.svg" alt="" id="emoji">
-                <p id="bold"><b>Congrats!</b></p>
-                <p id="text">you have successfully joined the waitlist.We'd update you as soon as we launch.</p>
-                <button id="close-modal">close</button>
+        <!-- About Us -->
+        <section id="aboutSection">
+            <div class="aboutOne">
+                <h2>Welcome to Prime Video</h2>
+                <p> 
+                    Flixia is a subscription-based streaming service that allows our subscribers to watch TV 
+                    shows and movies without commercials on an internet-connected device.Watch now, cancel anytime.
+                </p>
+            <div class="aboutTwo">
+                <img src="/images/hero2.PNG" alt="" id="heroImage">
             </div>
-        </div>
+            </div>
+        </section>
 
+        <!-- pricing section -->
+        <section id="pricingSection">
+            <p id="planText1">Plans and pricing</p>
+            <p id="planText2">
+                Flixia offers a variety of plans to meet your needs. The plan you choose will determine the 
+                video quality and the number of screens you can watch Flixia on at the same time.With all 
+                of our plans, you can watch unlimited TV shows and movies, and play mobile games.
+            </p>
+            <div class="plans">
+                <div class="planOne">
+                    <h2>Basic</h2>
+                    <div class="line"><p class="bold"># 1,200</p>/Month</div>
+                    <button id="planBtn">Start your free trial.</button>
+                    <p id="planText">
+                        #1,200/month after a 3-day trial.No commitment.Plan automatically renews 
+                        after trial until cancelled.
+                    </p>
+                </div>
+                <div class="planOne">
+                    <h2>Standard</h2>
+                    <div class="line"><p class="bold"># 3,600</p>/Month</div>
+                    <button id="planBtn">Start your free trial.</button>
+                    <p id="planText">
+                        #1,200/month after a 3-day trial.No commitment.Plan automatically renews 
+                        after trial until cancelled.
+                    </p>
+                </div>
+                <div class="planOne">
+                    <h2>Premium</h2>
+                    <div class="line"><p class="bold"># 4,400</p>/Month</div>
+                    <button id="planBtn">Start your free trial.</button>
+                    <p id="planText">
+                        #1,200/month after a 3-day trial.No commitment.Plan automatically renews 
+                        after trial until cancelled.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- form section -->
         <div class="form">
-            <h2>Sign In</h2>
+            <p id="sign">Sign in</p>
 
             <form action="" id="login">
             <label for="Email">Email</label>
-            <input type="email" name="Email" id="">
+            <input type="email" name="Email" id="" placeholder="Enter Email...">
             <br>
             <label for="password">Password</label>
-            <input type="password" name="password" id="">
+            <input type="password" name="password" id="" placeholder="Enter Password">
             <br>
             <input type="submit" value="Sign in">
             </form>
 
             <div class="check">
                 <input type="checkbox" name="Remember me" id=""> 
-                <p>need help?</p>
+                <p>Keep me signed in</p>
             </div>
-            <div class="sign">
-                <p>New to Flixia? Sign up now</p>
+            <div class="create">
+                <p>New to Flixia? </p>
+                <input type="submit" value="Create your Flixia account">
             </div>
         </div>
     </main>
