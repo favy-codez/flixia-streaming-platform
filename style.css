@@ -39,6 +39,59 @@ a{
     
 }
 
+/* About us section */
+#aboutSection{
+    margin: 4rem auto 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    padding:  2rem 0 15rem 2.8rem;
+    background: url(/images/work.PNG);
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+.aboutOne{
+    backdrop-filter: blur(5px);
+    text-align: left;
+    width: 50%;
+    margin: 18px 0 0 0;
+    padding: 10px 0px;
+}
+
+.aboutOne h2{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.aboutOne p{
+    font-size: 20px;
+    font-weight: 500;
+    width: 80%;
+}
+
+.aboutTwo{
+    text-align: center;
+    padding: 10px 0 6rem 2px;
+    backdrop-filter: blur(5px);
+    width: 47%;
+    margin: 18px 0 0 0;
+}
+
+.aboutTwo p{
+    margin: 1rem 0 1rem 0;
+}
+
+.aboutBtn{
+    padding: 16px 20px;
+    border: none;
+    border-radius: 6px;
+    backdrop-filter: blur(5px);
+    font-size: 20px;
+    font-weight: 500;
+}
+
 /* pricing section */
 #pricingSection{
     margin: 8rem auto 2rem auto;
