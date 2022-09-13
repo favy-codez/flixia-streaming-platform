@@ -7,6 +7,7 @@
 
 html, body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -55,9 +56,11 @@ footer{
 .footerTextOne {
     display: flex;
     gap: 1rem;
-    margin: 2rem 0;
+    margin: 1.6rem 0;
 }
 
-.ri-twitter-line, .ri-whatsapp-line, .ri-instagram-line{
-    width: 4rem;
-} 
+.link:hover{
+    color: rgb(209,147,37);
+    cursor: pointer;
+}
+
