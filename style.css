@@ -283,13 +283,70 @@ footer{
 
 /* media query */
 
-@media screen and (max-width:576px){
-    #aboutSection{
-        flex-direction: column;
+    @media screen and (max-width:768px){
+        #aboutSection{
+            flex-direction: column;
+            margin-top: 6rem;
+        }
+        .aboutOne{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .aboutOne p{
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .aboutOne h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .aboutTwo{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .plans{
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 2rem;
+        }
+        #circleSection{
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 2rem;
+          }
+
     }
+    
+    @media screen and (max-width:576px){
+        /* hamburger */
     .openNav{
         padding-right: 45px;
         display: block;
+    }
+    /* hamburger */
+    #aboutSection{
+        flex-direction: column;
+        margin-top: 6rem;
+    }
+    .aboutOne{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .aboutOne p{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .aboutOne h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .aboutTwo{
+        margin-left: auto;
+        margin-right: auto;
     }
     .plans{
         grid-template-columns: repeat(1, 1fr);
@@ -297,5 +354,41 @@ footer{
     }
     #circleSection{
         grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 2rem;
       }
 }
+      @media screen and (max-width:375px){
+        #aboutSection{
+            padding: 0;
+        }
+        .aboutOne h2{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .aboutBtn{
+            padding: 8px 22px;
+            font-size: 12px;
+        }
+        #planText{
+            line-height: 20px;
+        }
+        #planText1{
+            margin: 2rem auto;
+            padding: 0 5px;
+            font-size: 2rem;
+        }
+        #planText2{
+            padding: 0 1rem;
+        }
+        #circleSection{
+            justify-content: center;
+        }
+        input[type=email], input[type=password]{
+            margin: 14px 0;
+        }
+        .footerTextOne{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
