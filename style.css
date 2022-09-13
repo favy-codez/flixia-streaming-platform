@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* header */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem 1rem 2rem;
+    position: fixed;
+    margin: 0 0 5rem 0;
+    background-color: rgb(236,236,236);
+    width: 100%;
+}
+
+#logo{
+    width: 9rem;
+}
+
+.nav-right{
+    display: flex;
+    gap: 2rem;
+    padding-top: 1rem;
+    
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15rem 0 0 0;
+    background-color: rgb(19,32,60);
+    color: #fff;
+    padding: 2rem 0 4rem 0;
+}
+
+.footerTextOne a{
+    color: #fff;
+}
+
+.footerTextOne {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.ri-twitter-line, .ri-whatsapp-line, .ri-instagram-line{
+    width: 4rem;
+} 
