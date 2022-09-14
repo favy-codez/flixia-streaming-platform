@@ -154,7 +154,7 @@ hr{
 .profileSec2{
     background: url(/images/imdd.jpg);
     object-fit: cover;
-    opacity: 0.8999;
+    /* opacity: 0.8999; */
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -733,13 +733,14 @@ input[type=submit]{
             }
             #planText{
                 width: 100%;
-                line-height: 1rem;
+                line-height: 2.4rem;
             }
             #planText2{
                 font-size: 1rem;
             }
             .planOne{
-                padding: 3rem 2rem;
+                padding:2rem 0 3rem 0;
+                max-width: 500px;
             }
             .profileBtn1{
                 display: grid;
