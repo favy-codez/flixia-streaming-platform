@@ -29,6 +29,7 @@ hr{
     justify-content: space-between;
     padding: 1rem 3rem 1rem 2rem;
     position: fixed;
+    z-index: 999;
     margin: 0 0 0 0;
     background-color: rgb(236,236,236);
     width: 100%;
@@ -72,6 +73,8 @@ hr{
 /* About us section */
 #aboutSection{
     background-image: url(/images/heroimg.jpg);
+    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("/images/heroimg.jpg"); 
+    object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -80,9 +83,7 @@ hr{
     align-items: center;
     justify-content: space-between;
     padding: 0 3.4rem 0 2.7rem;
-    color: rgb(19,32,60);
-    /* color: #000; */
-    /* background-color: rgb(188,183,186); */
+    color: #fff; 
 }
 
 .aboutOne h2{
@@ -90,15 +91,13 @@ hr{
     font-weight: 800;
 }
 
-.aboutOne p{
+.wrapper p{
     font-size: 20px;
     font-weight: 500;
-    width: 39%;
+    width: 65%;
     line-height: 25px;
-}
-
-.aboutTwo{
-    width: 40%;
+    margin: 1rem 0;
+    text-align: center;
 }
 
 .aboutBtn{
@@ -108,20 +107,35 @@ hr{
     font-size: 17px;
     font-weight: 300;
     text-align: center;
-    
-}
-
-.aboutBtn2{
-    background-color: rgb(209,147,37);
-    margin: 20px 0 0 0; 
+    background-color: #fff;
 }
 
 .aboutBtn:hover{
-    background-color: rgb(19,32,60);
+    background-color:rgb(209,147,37);
+}
+
+.aboutOneBtn{
+    margin: 20px 0 0 0; 
+}
+
+.aboutBtn2{
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    background-color: rgb(209,147,37);
+}
+
+.aboutBtn2:hover{
+    background-color: #fff;
 }
 
 .aboutOneBtn h3{
     margin: 10px 0 0 7rem;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
 /* profile Section */
@@ -138,7 +152,9 @@ hr{
 }
 
 .profileSec2{
-    background-color: #000;
+    background: url(/images/imdd.jpg);
+    object-fit: cover;
+    opacity: 0.8999;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -147,15 +163,21 @@ hr{
     padding: 0 5rem;
 }
 
+.profileSec2 img{
+    object-fit: cover;
+    opacity: 0.4;
+}
+
 .profileSec2 h2{
     font-size: 2rem;
     font-weight: 700;
 }
 
 .profileSec2 p{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 200;
-    width: 90%;
+    width: 78%;
+    text-align: center;
     margin: 20px;
 }
 
@@ -164,15 +186,12 @@ hr{
 }
 
 .profileBtn1{
-    
     padding: 16px 20px;
     border: none;
     border-radius: 6px;
     font-size: 20px;
     font-weight: 500;
     text-align: center;
-    /* width: 44%; */
-    /* margin: 20px 0 0 0; */
 }
 
 .profileBtn1:hover{
@@ -203,7 +222,7 @@ hr{
     font-size: 1.5rem;
     font-weight: 300;
     padding: 0 2rem;
-    text-align: left;
+    text-align: center;
 }
 
 .plans{
@@ -249,36 +268,41 @@ hr{
 #planText{
     width: 80%;
     text-align: center;
-    line-height: 18px;
+    line-height: 24px;
     margin-left: auto;
     margin-right: auto;
   }
 
   /* circle section */
 #circleSection{
-    display: grid;
-    grid-column-gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 3rem 4rem;
+    display: flex;
+    gap: 2rem;
+    padding: 5rem 2.9rem;
+  }
+
+.circle{
+    box-shadow: 7px 7px 7px 7px rgb(230, 230, 230);
+    padding: 16px 20px 40px 20px;
+    background-color: #fff;
+    border-radius: 20px;
     text-align: center;
   }
 
-.circle h2{
-    font-size: 2.3rem;
-    font-weight: 800;
+  .circle h2{
+    font-size: 1.7rem;
+    font-weight: 600;
     margin: 10px 0 10px 0;
-    letter-spacing: 2px;
+    color: rgb(19,32,60);
 }
 
 .circle p{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     width: 76%;
     margin-left: auto;
     margin-right: auto;
     line-height: 20px;
 }
-
 
 /* form section */
 .form{
@@ -328,6 +352,93 @@ input[type=submit]{
 
 .create p{
     text-align: center;
+}
+
+/* FAQ section */
+
+#FAQSection{
+    position: relative;
+}
+
+.FAQHeader{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.FAQHeader p{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: rgb(231,51,43);
+}
+
+.FAQHeader h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.FAQHeader img{
+    width: 26%;
+    height: 17%;
+    position: absolute;
+    left: 7%;
+    top: -11%; 
+    border: none;
+    z-index: 1; 
+} 
+#FAQs{
+    display: grid;
+    place-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FAQ{
+    width: 100%;
+    border:1px solid rgb(194, 189, 189);
+    padding: 20px ;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.FAQ h3{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.FAQ p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.FAQuestion{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35rem;
+}
+
+.FAQAnswer{
+    display: none;
+}
+
+.FAQ.showFAQ .FAQAnswer{
+    display: block;
+}
+
+.FAQText{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40%;
+    margin-right: auto;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    font-size: 1.3rem;
+    font-weight: 400;
+    
 }
 
 /* footer */
@@ -403,6 +514,12 @@ input[type=submit]{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
+    #planText{
+        width: 100%;
+    }
+    .FAQuestion{
+        gap: 25rem;
+    }
 }
 
     @media screen and (max-width:768px){
@@ -428,20 +545,16 @@ input[type=submit]{
             text-align: center;
             margin-bottom: 20px;
         }
-        .aboutTwo{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 2rem;
-            width: 45%;
+        .aboutOneBtn{
+            display: grid;
+            place-content: center;
         }
         .plans{
             grid-template-columns: repeat(1, 1fr);
             grid-row-gap: 2rem;
         }
         #circleSection{
-            grid-template-columns: repeat(1, 1fr);
-            grid-row-gap: 2rem;
+            flex-direction: column;
           }
           #profileSection{
             flex-direction: column;
@@ -453,7 +566,12 @@ input[type=submit]{
           .profileSec2{
             padding:7rem 0;
           }
-          
+          .FAQHeader h1{
+            font-size: 1.8rem;
+          }
+          .FAQuestion{
+            gap: 10rem;
+          }
     }
     
     @media screen and (max-width:576px){
@@ -557,10 +675,11 @@ input[type=submit]{
               input[type=email]{
                 margin: 16px 0;
             }
+            .FAQuestion{
+                gap: 2rem;
+              }
         }
     /* hamburger */
-   
-
       @media screen and (max-width:375px){
         .aboutOne{
             margin-top: 5px;
@@ -579,9 +698,6 @@ input[type=submit]{
         .aboutBtn{
             padding: 8px 22px;
             font-size: 12px;
-        }
-        .aboutOneBtn h3{
-            margin: 10px 0 0 4rem;
         }
         #planText{
             line-height: 20px;

@@ -2,6 +2,7 @@ const navSlide = () =>{
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
+    
 
 burger.addEventListener('click', ()=>{
         //toggle nav
@@ -24,3 +25,12 @@ burger.addEventListener('click', ()=>{
 
 
 navSlide();
+
+
+// FAQ section
+const FAQs = document.querySelectorAll('.FAQ');
+FAQs.forEach(FAQ =>{
+    FAQ.addEventListener('click', function() {
+        FAQ.classList.toggle('showFAQ')
+    })
+})
