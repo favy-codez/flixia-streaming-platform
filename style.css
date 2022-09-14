@@ -265,7 +265,7 @@ input[type=submit]{
 }
 
 /* footer */
-footer{
+#footerSection{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -295,12 +295,12 @@ footer{
     margin: 1.5rem 0 0 0;
 }
 
-.footerMedia{
+#footerMedia{
     display: flex;
     gap: 15px;
 }
 
-.footerMedia img{
+#footerMedia img{
     width: 2rem;
     background-color: #fff;
     border: none;
