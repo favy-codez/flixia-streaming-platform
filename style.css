@@ -29,7 +29,7 @@ hr{
     justify-content: space-between;
     padding: 1rem 3rem 1rem 2rem;
     position: fixed;
-    margin: 0 0 5rem 0;
+    margin: 0 0 0 0;
     background-color: rgb(236,236,236);
     width: 100%;
 }
@@ -71,20 +71,18 @@ hr{
 
 /* About us section */
 #aboutSection{
-    margin: 4rem auto 2rem auto;
+    background-image: url(/images/heroimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 4rem auto 0rem auto;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    padding:  3rem 0rem 5rem 2.8rem;
-    background-color: rgb(19,32,60);
-    color: #fff;
-}
-
-.aboutOne{
-    text-align: left;
-    width: 50%;
-    margin: 18px 0 0 0;
-    padding: 10px 0px;
+    padding: 0 3.4rem 0 2.7rem;
+    color: rgb(19,32,60);
+    /* color: #000; */
+    /* background-color: rgb(188,183,186); */
 }
 
 .aboutOne h2{
@@ -95,31 +93,98 @@ hr{
 .aboutOne p{
     font-size: 20px;
     font-weight: 500;
-    width: 80%;
+    width: 39%;
+    line-height: 25px;
 }
 
 .aboutTwo{
-    text-align: center;
-    padding: 10px 0 2rem 2px;
-    width: 47%;
-    margin: 18px 0 0 0;
-}
-
-.aboutTwo p{
-    margin: 1rem 0 1rem 0;
+    width: 40%;
 }
 
 .aboutBtn{
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+.aboutBtn2{
+    background-color: rgb(209,147,37);
+    margin: 20px 0 0 0; 
+}
+
+.aboutBtn:hover{
+    background-color: rgb(19,32,60);
+}
+
+.aboutOneBtn h3{
+    margin: 10px 0 0 7rem;
+}
+
+/* profile Section */
+#profileSection{
+    display: flex;
+    /* padding: 0 3rem; */
+    /* background-color: rgb(19,32,60); */
+    background-color: rgb(236,236,236);
+}
+
+.profileSec1{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.profileSec2{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+}
+
+.profileSec2 h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.profileSec2 p{
+    font-size: 1.2rem;
+    font-weight: 200;
+    width: 90%;
+    margin: 20px;
+}
+
+.profileBtn p{
+    text-align: center;
+}
+
+.profileBtn1{
+    
     padding: 16px 20px;
     border: none;
     border-radius: 6px;
     font-size: 20px;
     font-weight: 500;
+    text-align: center;
+    /* width: 44%; */
+    /* margin: 20px 0 0 0; */
 }
 
-.aboutBtn:hover{
-    background-color: rgb(242, 215, 250);
+.profileBtn1:hover{
+    background-color: rgb(209,147,37);
 }
+.profileBtn2{
+    background-color: rgb(209,147,37);
+}
+.profileBtn2:hover{
+    background-color: #fff;
+}
+
 
 /* pricing section */
 #pricingSection{
@@ -138,6 +203,7 @@ hr{
     font-size: 1.5rem;
     font-weight: 300;
     padding: 0 2rem;
+    text-align: left;
 }
 
 .plans{
@@ -322,6 +388,21 @@ input[type=submit]{
     .aboutOne h2{
         margin-bottom: 20px;
     }
+    #aboutSection{
+        justify-content: center;
+        align-items: center;
+        /* padding: 3rem 0; */
+    }
+    .aboutTwo{
+        width: 60%;
+    }
+    .aboutOne p{
+        width: 54%;
+    }
+    .profileSec1{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
     @media screen and (max-width:768px){
@@ -348,8 +429,11 @@ input[type=submit]{
             margin-bottom: 20px;
         }
         .aboutTwo{
+            display: block;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 2rem;
+            width: 45%;
         }
         .plans{
             grid-template-columns: repeat(1, 1fr);
@@ -359,7 +443,17 @@ input[type=submit]{
             grid-template-columns: repeat(1, 1fr);
             grid-row-gap: 2rem;
           }
-
+          #profileSection{
+            flex-direction: column;
+            padding-bottom: 6rem;
+          }
+          .profileSec1{
+            grid-template-columns: repeat(10, 1fr);
+          }
+          .profileSec2{
+            padding:7rem 0;
+          }
+          
     }
     
     @media screen and (max-width:576px){
@@ -469,7 +563,7 @@ input[type=submit]{
 
       @media screen and (max-width:375px){
         .aboutOne{
-            margin-top: 22px;
+            margin-top: 5px;
         }
         .aboutOne p{
            line-height: 22px;
@@ -485,6 +579,9 @@ input[type=submit]{
         .aboutBtn{
             padding: 8px 22px;
             font-size: 12px;
+        }
+        .aboutOneBtn h3{
+            margin: 10px 0 0 4rem;
         }
         #planText{
             line-height: 20px;
