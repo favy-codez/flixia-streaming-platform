@@ -310,12 +310,13 @@ span p:hover{
     text-align: center;
 }
 
- .fa-solid{
-    display: grid;
-    place-content: center;
+ .font{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
     color: rgb(19,32,60);
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 35px;
+    margin: 0 auto 2rem auto;
 }
 
 .circle p{
@@ -672,7 +673,7 @@ input[type=submit]{
                 margin-right: auto;
             }
             #pricingSection{
-                padding: 0;
+                padding: 0 ;
                 margin: 0;
             }
             .plans{
@@ -760,10 +761,10 @@ input[type=submit]{
             #planText2{
                 font-size: 1rem;
             }
-            .planOne{
+            /* .planOne{
                 padding:2rem 0 3rem 0;
                 max-width: 500px;
-            }
+            } */
             .profileBtn1{
                 display: grid;
                 place-content: center;
