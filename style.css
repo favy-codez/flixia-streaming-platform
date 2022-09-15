@@ -99,7 +99,7 @@ span p:hover{
 
 .aboutOne h2{
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .wrapper p{
@@ -127,6 +127,8 @@ span p:hover{
 
 .aboutOneBtn{
     margin: 20px 0 0 0; 
+    display: flex;
+    gap: 12px;
 }
 
 .aboutBtn2{
@@ -164,6 +166,7 @@ span p:hover{
 
 .profileSec2{
     background: url(/images/imdd.jpg);
+    background: linear-gradient(rgba(29, 38, 113, 0.8), rgb(19,32,60)), url(/images/imdd.jpg);
     object-fit: cover;
     /* opacity: 0.8999; */
     color: #fff;
