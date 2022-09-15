@@ -23,6 +23,17 @@ hr{
     border-style: inset;
 }
 
+span p{
+    color: rgb(19,32,60);
+    text-align: left;
+    margin: 2rem 0 0 0;
+    margin-top: 2.2rem;
+}
+
+span p:hover{
+    color: rgb(209,147,37);
+}
+
 /* header */
 .nav{
     display: flex;
@@ -73,7 +84,7 @@ hr{
 /* About us section */
 #aboutSection{
     background-image: url(/images/heroimg.jpg);
-    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("/images/heroimg.jpg"); 
+    background: linear-gradient(rgba(29, 38, 113, 0.8), rgb(19,32,60)), url("/images/heroimg.jpg"); 
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
@@ -271,21 +282,24 @@ hr{
     line-height: 24px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.2rem;
+    font-weight: 300;
   }
 
   /* circle section */
 #circleSection{
     display: flex;
     gap: 2rem;
-    padding: 5rem 2.9rem;
+    padding: 10rem 2.9rem;
   }
 
 .circle{
-    box-shadow: 7px 7px 7px 7px rgb(230, 230, 230);
-    padding: 16px 20px 40px 20px;
+    box-shadow: 4px 4px 4px 4px rgb(230, 230, 230);
+    padding: 3.5rem 2rem;
+    /* padding: 16px 20px 40px 20px; */
     background-color: #fff;
     border-radius: 20px;
-    text-align: center;
+    max-width: 400px;
   }
 
   .circle h2{
@@ -293,15 +307,25 @@ hr{
     font-weight: 600;
     margin: 10px 0 10px 0;
     color: rgb(19,32,60);
+    text-align: center;
+}
+
+ .fa-solid{
+    display: grid;
+    place-content: center;
+    color: rgb(19,32,60);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .circle p{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
-    width: 76%;
+    width: 93%;
     margin-left: auto;
     margin-right: auto;
-    line-height: 20px;
+    line-height: 26px;
+    text-align: center;
 }
 
 /* form section */
@@ -358,6 +382,7 @@ input[type=submit]{
 
 #FAQSection{
     position: relative;
+    padding: 4rem;
 }
 
 .FAQHeader{
@@ -366,15 +391,10 @@ input[type=submit]{
     margin-top: 3rem;
 }
 
-.FAQHeader p{
-    font-size: 1.7rem;
-    font-weight: 500;
-    color: rgb(231,51,43);
-}
-
 .FAQHeader h1{
     font-size: 3rem;
     font-weight: 800;
+    color: rgb(19,32,60);
 }
 
 .FAQHeader img{
@@ -418,11 +438,13 @@ input[type=submit]{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 35rem;
+    gap: 30rem;
+    color: rgb(19,32,60);
 }
 
 .FAQAnswer{
     display: none;
+    width: 50%;
 }
 
 .FAQ.showFAQ .FAQAnswer{
