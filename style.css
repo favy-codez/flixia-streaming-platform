@@ -781,5 +781,8 @@ input[type=submit]{
             #FAQs{
                 width: 100%;
             }
+            #FAQSection{
+                padding: 0;
+            }
         }
     }
