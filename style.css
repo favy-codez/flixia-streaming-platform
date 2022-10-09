@@ -586,6 +586,11 @@ input[type=submit]{
     cursor: pointer;
 }
 
+#footerMedia img:hover{
+    background-color: rgb(209,147,37);
+    transition: 0.5s;
+}
+
 /* media query */
 @media screen and (max-width:992px){
     .nav-links{
