@@ -23,7 +23,6 @@ burger.addEventListener('click', ()=>{
 
 }
 
-
 navSlide();
 
 // modal section
