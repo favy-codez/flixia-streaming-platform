@@ -702,9 +702,6 @@ input[type=submit]{
         .nav-active{
             transform: translateX(0%);
         }
-        /* .nav-links a{
-            opacity: 0;
-        } */
         .burger{
             display: block;
         }
