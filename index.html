@@ -52,9 +52,18 @@
                 </div>
                 
                 <div class="aboutOneBtn">
-                    <button class="aboutBtn">Already a member? Sign in</button>
+                    <div id="overlay">
+                        <div id="modal">
+                            <img src="./images/emoji.svg" alt="" id="emoji">
+                            <p id="bold"><b>Congrats!</b></p>
+                            <p id="text">you have successfully joined the waitlist.We'd update you as soon as we launch.</p>
+                            <button id="close-modal">close</button>
+                        </div>
+                    </div>
+                    
+                    <button class="aboutBtn" id="open-modal">Already a member? Sign in</button>
                         
-                    <button class="aboutBtn2">Start your 7-day free trial</button>
+                    <button class="aboutBtn2" id="open-modal">Start your 7-day free trial</button>
                 </div>
             </div>
         </section>
@@ -158,7 +167,7 @@
                 <div class="planOne">
                     <h2>Basic</h2>
                     <div class="line"><p class="bold"># 1,200</p>/Month</div>
-                    <button id="planBtn">Start your free trial.</button>
+                    <a href="#aboutSection"><button id="planBtn">Start your free trial.</button></a>
                     <p id="planText">
                         #1,200/month after a 3-day trial.No commitment.Plan automatically renews 
                         after trial until cancelled.
@@ -167,7 +176,7 @@
                 <div class="planOne">
                     <h2>Standard</h2>
                     <div class="line"><p class="bold"># 3,600</p>/Month</div>
-                    <button id="planBtn">Start your free trial.</button>
+                    <a href="#aboutSection"><button id="planBtn">Start your free trial.</button></a>
                     <p id="planText">
                         #3,600/month after a 3-day trial.No commitment.Plan automatically renews 
                         after trial until cancelled.
@@ -176,7 +185,7 @@
                 <div class="planOne">
                     <h2>Premium</h2>
                     <div class="line"><p class="bold"># 4,400</p>/Month</div>
-                    <button id="planBtn">Start your free trial.</button>
+                    <a href="#aboutSection"><button id="planBtn">Start your free trial.</button></a>
                     <p id="planText">
                         #4,400/month after a 3-day trial.No commitment.Plan automatically renews 
                         after trial until cancelled.

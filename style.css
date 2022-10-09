@@ -155,6 +155,26 @@ span p:hover{
     margin-bottom: 20px;
 }
 
+/* modal section */
+#overlay{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10;
+    left: 0;
+    right: 0;
+}
+
+#modal {
+    background-color: brown;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px 16px;
+    height: 15rem;
+}
+/*end  modal section */
+
 /* profile Section */
 #profileSection{
     display: flex;
