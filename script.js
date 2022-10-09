@@ -26,6 +26,16 @@ burger.addEventListener('click', ()=>{
 
 navSlide();
 
+// modal section
+document.getElementById("open-modal").addEventListener("click", function(e) {
+    e.preventDefault()
+    document.getElementById("overlay").style.display  ="block" ; 
+})
+
+document.getElementById("close-modal").addEventListener("click", function(){
+    document.getElementById("overlay").style.display = "none";
+})
+
 
 // FAQ section
 const FAQs = document.querySelectorAll('.FAQ');

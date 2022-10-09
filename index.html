@@ -50,20 +50,10 @@
                         Unlimited movies, TV shows, and more.Watch anywhere. Cancel anytime.
                     </p>
                 </div>
-                
-                <div class="aboutOneBtn">
-                    <div id="overlay">
-                        <div id="modal">
-                            <img src="./images/emoji.svg" alt="" id="emoji">
-                            <p id="bold"><b>Congrats!</b></p>
-                            <p id="text">you have successfully joined the waitlist.We'd update you as soon as we launch.</p>
-                            <button id="close-modal">close</button>
-                        </div>
-                    </div>
-                    
-                    <button class="aboutBtn" id="open-modal">Already a member? Sign in</button>
+
+                    <button class="aboutBtn" >Already a member? Sign in</button>
                         
-                    <button class="aboutBtn2" id="open-modal">Start your 7-day free trial</button>
+                    <button class="aboutBtn2"">Start your 7-day free trial</button>
                 </div>
             </div>
         </section>
@@ -206,8 +196,21 @@
             <label for="password">Password</label>
             <input type="password" name="password" id="" placeholder="Enter Password">
             <br>
-            <input type="submit" value="Sign in">
+            <input type="submit" value="Sign in" id="open-modal">
             </form>
+
+            <!-- modal -->
+            <div class="aboutOneBtn">
+                <div id="overlay">
+                    <div id="modal">
+                        <img src="./images/emoji.svg" alt="" id="emoji">
+                        <p id="bold"><b>Congrats!</b></p>
+                        <p id="text">You have successfully joined the waitlist.We'd update you as soon as we launch.</p>
+                        <button id="close-modal">close</button>
+                    </div>
+                </div>
+            </div>
+            <!-- end of modal -->
 
             <div class="check">
                 <input type="checkbox" name="Remember me" id=""> 
@@ -215,7 +218,7 @@
             </div>
             <div class="create">
                 <p>New to Flixia? </p>
-                <input type="submit" value="Create your Flixia account">
+                <input type="submit" value="Create your Flixia account" id="open-modal">
             </div>
         </div>
         <hr>
